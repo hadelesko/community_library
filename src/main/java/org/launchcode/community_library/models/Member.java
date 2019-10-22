@@ -12,6 +12,7 @@ public class Member {
 
     private String lastName;
 
+    @Embedded
     private Address address;
     //member is the owner of the relationship member and member_bookhub
     // and his according to the java persistence the owner of the relationship

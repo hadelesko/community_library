@@ -9,9 +9,14 @@ public class BookOwner {
     @Id
     @GeneratedValue
     private int id;
+    private String firstName;
+    private String lastName;
     @ManyToOne
     @JoinColumn(name="book_id")
     private Book book;
+
+    @Embedded
+    private  Address address;
 
     public  BookOwner(){}
 
